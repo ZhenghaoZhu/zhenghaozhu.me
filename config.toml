@@ -1,0 +1,91 @@
+baseurl = ""
+languageCode = "en-us"
+theme = "hello-friend-ng"
+publishDir = "public"
+
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
+
+enableRobotsTXT = true
+enableGitInfo   = true
+enableEmoji     = true
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Metadata mostly used in document's head
+  description = "Zhenghao (Kevin) Zhu's Personal Website"
+  keywords = "personal website, homepage, blog, science, informatics, development, programming, Stony Brook University, Zhenghao Zhu, Zhenghao (Kevin) Zhu, Kevin Zhu"
+  images = [""]
+
+  # Directory name of your blog content (default is `content/posts`)
+  contentTypeName = "posts"
+  # Default theme "light" or "dark"
+  defaultTheme = "dark"
+
+
+[languages]
+  [languages.en]
+    title = "Zhenghao (Kevin) Zhu"
+    keywords = "personal website, homepage, blog, science, informatics, development, programming, Stony Brook University, Zhenghao Zhu, Zhenghao (Kevin) Zhu, Kevin Zhu"
+    copyright = ""  
+    readOtherPosts = "Read other posts"
+
+    [languages.en.params.logo]
+      logoText = "$ cd /kevin/Home"
+      logoHomeLink = "/"
+    # or
+    #
+    # path = "/img/your-example-logo.svg"
+    # alt = "Your example logo alt text"
+
+	# You can create a language based menu
+    [languages.en.menu]
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "Projects"
+        name = "Projects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "Posts"
+        name = "Posts"
+        url = "/posts"
+  # Social icons
+  [[params.social]]
+    name = "resume"
+    url = "https://drive.google.com/file/d/1B-zOl7RWpCB4oYNKd2pKki-f1M3XrNjl/view?usp=sharing"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:kevinzhuzhenghao@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/ZhenghaoZhu"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/zhuzhenghao/"
+# And you can even create generic menu
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "About"
+    url        = "/about"
+  [[menu.main]]
+    identifier = "projects"
+    name       = "Projects"
+    url        = "/projects"
+  [[menu.main]]
+    identifier = "blog"
+    name       = "Blog"
+    url        = "/blog"
