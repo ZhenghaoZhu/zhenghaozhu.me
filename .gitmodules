@@ -1,3 +1,3 @@
-[submodule "zhenghaozhu.github.io"]
-	path = zhenghaozhu.github.io
-	url = git@github.com:ZhenghaoZhu/zhenghaozhu.github.io.git
+[submodule "Personal-Website"]
+	path = Personal-Website
+	url = git@github.com:ZhenghaoZhu/Personal-Website.git
