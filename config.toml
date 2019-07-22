@@ -1,7 +1,7 @@
-baseurl = ""
+baseurl = "https://zhenghaozhu.github.io/"
 languageCode = "en-us"
 theme = "hello-friend-ng"
-publishDir = "public"
+publishDir = "zhenghaozhu.github.io"
 
 rssLimit  = 10  # Maximum number of items in the RSS feed.
 copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
