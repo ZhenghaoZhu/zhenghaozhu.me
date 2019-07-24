@@ -6,7 +6,7 @@ aliases = ["about-me"]
   name = "Zhenghao (Kevin) Zhu"
 +++
 
-Currently a Computer Science and Applied Mathematics at Stony Brook University interested in Software Development and Data Science. 
+Currently studying Computer Science and Applied Mathematics at Stony Brook University which has furthered my interest in Software Development and Data Science. 
 
 I'm also working as an Undergraduate Research Assistant in the Moffitt Group at the Department of Biomedical Informatics at Stony Brook University, performing data analysis in genome data to develop tailored treatments for pancreatic cancer.
 
