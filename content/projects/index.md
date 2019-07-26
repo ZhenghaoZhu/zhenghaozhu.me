@@ -6,22 +6,17 @@ author: Zhenghao (Kevin) Zhu
 ---
 ---
 
-#### Title
-
-<!-- {{< figure src = "../../static/static/numbers_and_letters.jpg">}} -->
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tincidunt arcu non sodales neque sodales ut. Amet nisl suscipit adipiscing bibendum est ultricies integer. Sed blandit libero volutpat sed cras. In ornare quam viverra orci sagittis eu volutpat odio. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Volutpat sed cras ornare arcu dui vivamus. Augue eget arcu dictum varius duis at consectetur. Nunc pulvinar sapien et ligula. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Lectus quam id leo in vitae turpis massa. Sed euismod nisi porta lorem.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tincidunt arcu non sodales neque sodales ut. Amet nisl suscipit adipiscing bibendum est ultricies integer. Sed blandit libero volutpat sed cras. In ornare quam viverra orci sagittis eu volutpat odio. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Volutpat sed cras ornare arcu dui vivamus. Augue eget arcu dictum varius duis at consectetur. Nunc pulvinar sapien et ligula. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Lectus quam id leo in vitae turpis massa. Sed euismod nisi porta lorem.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Tincidunt arcu non sodales neque sodales ut. Amet nisl suscipit adipiscing bibendum est ultricies integer. Sed blandit libero volutpat sed cras. In ornare quam viverra orci sagittis eu volutpat odio. Eros in cursus turpis massa tincidunt dui ut ornare lectus. Volutpat sed cras ornare arcu dui vivamus. Augue eget arcu dictum varius duis at consectetur. Nunc pulvinar sapien et ligula. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus et. Lectus quam id leo in vitae turpis massa. Sed euismod nisi porta lorem.
+## Personal Website :floppy_disk:
 
 
-**Technologies:** [JavaScript][WIKI_JS], [ReactJS][HOME_REACTJS]
+The website you are looking at right now was created for the purpose of showing my personal projects and write guides on things that I find interesting. A cool little feature the website has is the button you see in the upper-right corner which changes the website from dark-mode to light-mode and viceversa. Please take a look around and contact me if you have any questions.
 
-**Source Code:** https://github.com/ZhenghaoZhu
 
-**Check It Out:** https://github.com/ZhenghaoZhu
+**Technologies:** [Hugo][HOME_HUGO], [JavaScript][WIKI_JS], [HTML/CSS][WIKI_HTML_CSS]
+
+**Code:** https://github.com/ZhenghaoZhu/zhenghaozhu.me
+
+**Demo:** [You are looking at it!](https://zhenghaozhu.me/)
 
 
 
@@ -36,10 +31,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [HOME_PSQL]:        https://www.postgresql.org
 [HOME_PYTHON]:      https://python.org/
 [HOME_REACTJS]:     https://reactjs.org/
+[HOME_HUGO]:        https://gohugo.io/
 [WIKI_C++]:         https://en.wikipedia.org/wiki/C%2B%2B
 [WIKI_HTTP]:        https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol
 [WIKI_JS]:          https://en.wikipedia.org/wiki/JavaScript
 [WIKI_JSON]:        https://en.wikipedia.org/wiki/JSON
 [WIKI_XML]:         https://en.wikipedia.org/wiki/XML
+[WIKI_HTML_CSS]:    https://www.w3schools.com/html/html_css.asp
 
 <!-- [Variable_name]:    link -->

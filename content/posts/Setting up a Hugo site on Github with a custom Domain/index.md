@@ -113,4 +113,22 @@ git push origin master
 
 ## Custom domain using Namecheap
 
-:gear: W.I.P :gear:
+To set up a custom domain for your Github page you first need a custom domain! My tool of choice is Namecheap as they offer free domains to people with edu email addresses. So navigate to the <a href="https://www.namecheap.com/" target="_blank">Namecheap main page</a>, create an account, and buy a domain. 
+
+After getting your custom domain, navigate to your \[username\].github.io repository and click on the settings tab. Go to the "custom domain" section and input your domain in the text box provided. 
+
+Now, go back to Namecheap and navigate to your account's dashboard. The domain you just bought should be there, click on the manage button at the right. From there, go to the Advanced DNS tab and copy the format of the image below. 
+
+<img src="Custom_Domain_Setup.png" style="float: left; margin-top: 15px; margin-bottom: 25px"/>
+
+As you can see, there are 4 A records with similar IP addresses, you should copy those into your dashboard as they are given my Github themselves. The last two are CNAME Records which should be different from the image and consist of <b>your</b> custom domain and <b>your</b> Github page domain.
+
+Now, remember when we changed the baseUrl in the config.toml file? Go back to that and change the baseUrl to your custom domain. Repeat the steps after that by adding the files, committing, and pushing. NOTE: This can also be done in Github if you are feeling a bit lazy.
+
+The last step is to add a file named "CNAME" to your \[username\].github.io repository and add your custom domain as the first line in the file. Note that when writing the text, the custom domain should just be the domain. No https, no slashes.
+
+After waiting a couple of hours for the DNS to setup, your webpage should be ready to be seen in all of its glory. Congratulations!
+
+If you have any questions or suggestions please feel free to email me. 
+
+Thanks for reading the guide! 

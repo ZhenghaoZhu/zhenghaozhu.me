@@ -47,18 +47,18 @@ enableEmoji     = true
 
 	# You can create a language based menu
     [languages.en.menu]
-      # [[languages.en.menu.main]]
-      #   identifier = "about me"
-      #   name = "About Me"
-      #   url  = "/about-me"
-      # [[languages.en.menu.main]]
-      #   identifier = "Projects"
-      #   name = "Projects"
-      #   url = "/projects"
-      # [[languages.en.menu.main]]
-      #   identifier = "Posts"
-      #   name = "Posts"
-      #   url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "about me"
+        name = "About Me"
+        url  = "/about-me"
+      [[languages.en.menu.main]]
+        identifier = "Projects"
+        name = "Projects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "Posts"
+        name = "Posts"
+        url = "/posts"
   # Social icons
   [[params.social]]
     name = "resume"
