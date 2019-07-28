@@ -1,5 +1,5 @@
 ---
-title: Host a Hugo site on Github with a custom domain from Namecheap
+title: Hugo site on Github with domain from Namecheap
 date: "2019-07-22"
 author: Zhenghao Zhu
 draft: false
@@ -14,7 +14,7 @@ tags:
 ---
 
 > A personal website to showcase personal projects is one of the most important things a computer science student should have when they are searching for a job. This 
-> tutorial will serve all those students that are not well-versed in web development and want an easy way to setup their personal website in a fast manner. 
+> tutorial will serve all those students that are not well-versed in web development and want an easy way to set up their website in a fast manner. 
 
 ## Before Starting 
 ---
@@ -22,24 +22,24 @@ With this tutorial I'm assuming you have an IDE such as <a href="https://code.vi
 
 ## Setting Up 
 ---
-First we should install Hugo with the help of the terminal. The code snippets for installing on Windows, Mac, or Linux respectively are below.
+First, we should install Hugo with the help of the terminal. The code snippets for installing on Windows, Mac, or Linux respectively are below.
 
 ### Windows with Chocolatey
-```
+``` bash
 choco install hugo -confirm
 ```
 
 #### Install Chocolatey on Windows with Powershell
-```
+``` bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 ### Mac with Homebrew
-```
+``` bash
 brew install hugo
 ```
 
 ### Linux with Linuxbrew
-```
+``` bash
 brew install hugo
 ```
 
@@ -48,18 +48,18 @@ The next steps can be found in the [Hugo docs](https://gohugo.io/getting-started
 
 ## Your first Hugo site with a theme
 ---
-Let's set up your site first using the terminal. For the purpose of this tutorial, we will be using Powershell on Windows 10. First, navigate to the Desktop directory and then follow the command below.
+Let's set up your site first using the terminal. For this tutorial, we will be using Powershell on Windows 10. First, navigate to the Desktop directory and then follow the command below.
 
-```
+``` bash
 C:\Users\username\Desktop> hugo new site site-name
 ```
 
 This should create a folder called site-name in your desktop with some boilerplate code.
 
 ### Initializing repository and choosing a theme 
-To choose a theme, go to the <a href="https://themes.gohugo.io/" target="_blank">Hugo themes webpage</a>. If you only want to use the theme without any changes then run the following git commands to set up a git repository with a clone of the theme. For the purpose of this tutorial, we will be using the Pulp theme.
+To choose a theme, go to the <a href="https://themes.gohugo.io/" target="_blank">Hugo themes webpage</a>. If you only want to use the theme without any changes then run the following git commands to set up a git repository with a clone of the theme. For this tutorial, we will be using the Pulp theme.
 
-```
+``` bash
 git init
 git clone https://github.com/koirand/pulp.git themes/pulp
 ```
@@ -69,9 +69,9 @@ If you want to make changes to the theme, the best solution is to download the t
 After initializing the repository and adding the theme, we need to configure the config.toml file in the site's folder. We will do this by copy-pasting the config.toml file available in the theme's folder. 
 
 ### Deploying to Github Pages 
-Now create an online <b>new</b> repository called \[username\].github.io and another repository called Personal-Website
+Now create an online <b>new</b> repository called \[username\].github.io and another repository called Personal-Website. The \[username\].github.io repository will host the HTML that will eventually be published to Github pages while the Personal-Website repository will host the Hugo files which will be used to generate the HTML files.
 
-```
+``` bash
 git remote add origin git@github.com:[github_username]/Personal-Website.git
 git add -A
 git commit -m "Initial commit for Hugo site"
@@ -83,7 +83,7 @@ git push -u origin master
 
 After this, we need to change the config.toml file by changing the baseURL and publishDir variables to the Github page URL. This will look like this:
 
-```
+``` md
 baseUrl = "https://[github_username].github.io/"
 ...
 publishDir = "[github_username].github.io/"
@@ -91,13 +91,13 @@ publishDir = "[github_username].github.io/"
 
 Now, just generate the HTML files using the following command:
 
-```
+``` bash
 hugo 
 ```
 
 The last step is pushing the generated HTML files to Github by doing the following:
 
-```
+``` bash
 git add -A
 git commit -m "HTML files generated and first iteration of personal website"
 git push origin master
@@ -105,7 +105,7 @@ git push origin master
 
 Now do the same thing in your main repository hosting the Hugo code
 
-```
+``` bash
 git add -A
 git commit -m "First version of Hugo personal website"
 git push origin master
@@ -119,15 +119,15 @@ After getting your custom domain, navigate to your \[username\].github.io reposi
 
 Now, go back to Namecheap and navigate to your account's dashboard. The domain you just bought should be there, click on the manage button at the right. From there, go to the Advanced DNS tab and copy the format of the image below. 
 
-<img src="Custom_Domain_Setup.png" style="float: left; margin-top: 15px; margin-bottom: 25px"/>
+{{< figure src="Custom_Domain_Setup.png" title="Namecheap DNS Setup">}}
 
 As you can see, there are 4 A records with similar IP addresses, you should copy those into your dashboard as they are given my Github themselves. The last two are CNAME Records which should be different from the image and consist of <b>your</b> custom domain and <b>your</b> Github page domain.
 
-Now, remember when we changed the baseUrl in the config.toml file? Go back to that and change the baseUrl to your custom domain. Repeat the steps after that by adding the files, committing, and pushing. NOTE: This can also be done in Github if you are feeling a bit lazy.
+Now, remember when we changed the baseUrl in the config.toml file? Go back to that and change the baseUrl to your custom domain. Repeat the steps after that by adding the files, committing, and pushing. <b>NOTE</b>: This can also be done in Github if you are feeling a bit lazy.
 
 The last step is to add a file named "CNAME" to your \[username\].github.io repository and add your custom domain as the first line in the file. Note that when writing the text, the custom domain should just be the domain. No https, no slashes.
 
-After waiting a couple of hours for the DNS to setup, your webpage should be ready to be seen in all of its glory. Congratulations!
+After waiting a couple of hours for the DNS to setup, your webpage should be ready. Congratulations!
 
 If you have any questions or suggestions please feel free to email me. 
 
