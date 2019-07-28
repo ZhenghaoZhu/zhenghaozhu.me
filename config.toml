@@ -59,6 +59,10 @@ enableEmoji     = true
         identifier = "Posts"
         name = "Posts"
         url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "Contact"
+        name = "Contact"
+        url = "/contact"
   # Social icons
   [[params.social]]
     name = "resume"
