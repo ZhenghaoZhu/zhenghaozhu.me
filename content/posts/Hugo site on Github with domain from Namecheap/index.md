@@ -11,6 +11,7 @@ tags:
   - github pages
   - custom domain
   - namecheap
+preview: Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test 
 ---
 
 > A personal website to showcase personal projects is one of the most important things a computer science student should have when they are searching for a job. This 
@@ -119,7 +120,7 @@ After getting your custom domain, navigate to your \[username\].github.io reposi
 
 Now, go back to Namecheap and navigate to your account's dashboard. The domain you just bought should be there, click on the manage button at the right. From there, go to the Advanced DNS tab and copy the format of the image below. 
 
-{{< figure src="Custom_Domain_Setup.png" title="Namecheap DNS Setup">}}
+{{% image="/images/Custom_Domain_Setup.png" alt="Coder Portfolio" %}}
 
 As you can see, there are 4 A records with similar IP addresses, you should copy those into your dashboard as they are given my Github themselves. The last two are CNAME Records which should be different from the image and consist of <b>your</b> custom domain and <b>your</b> Github page domain.
 
