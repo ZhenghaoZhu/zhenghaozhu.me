@@ -1,6 +1,6 @@
 ---
 title: Hugo site on Github with domain from Namecheap
-date: "2019-07-22"
+date: "2019-11-01"
 author: Zhenghao Zhu
 draft: false
 toc: false
@@ -120,7 +120,7 @@ After getting your custom domain, navigate to your \[username\].github.io reposi
 
 Now, go back to Namecheap and navigate to your account's dashboard. The domain you just bought should be there, click on the manage button at the right. From there, go to the Advanced DNS tab and copy the format of the image below. 
 
-{{% image="/images/Custom_Domain_Setup.png" alt="Coder Portfolio" %}}
+![Namecheap Example](Custom_Domain_Setup.png)
 
 As you can see, there are 4 A records with similar IP addresses, you should copy those into your dashboard as they are given my Github themselves. The last two are CNAME Records which should be different from the image and consist of <b>your</b> custom domain and <b>your</b> Github page domain.
 
