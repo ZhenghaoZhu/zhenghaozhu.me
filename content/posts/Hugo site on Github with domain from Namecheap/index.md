@@ -11,7 +11,6 @@ tags:
   - github pages
   - custom domain
   - namecheap
-preview: Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test Test 
 ---
 
 > A personal website to showcase personal projects is one of the most important things a computer science student should have when they are searching for a job. This 
@@ -20,6 +19,7 @@ preview: Test Test Test Test Test Test Test Test Test Test Test Test Test Test T
 ## Before Starting 
 ---
 With this tutorial I'm assuming you have an IDE such as <a href="https://code.visualstudio.com/" target="_blank">VS Code</a> or <a href="https://www.sublimetext.com/" target="_blank">Sublime</a> and a version control system such as <a href="https://git-scm.com/" target="_blank">Git</a>. 
+Also, you will need to create a GitHub account and Namecheap account to be able to perform instructions further down the line. 
 
 ## Setting Up 
 ---
@@ -49,6 +49,9 @@ The next steps can be found in the [Hugo docs](https://gohugo.io/getting-started
 
 ## Your first Hugo site with a theme
 ---
+
+**This further instructions can also be accomplished with the respective terminal in your operating system, whether that is OS, Linux, or some other operating system.**
+
 Let's set up your site first using the terminal. For this tutorial, we will be using Powershell on Windows 10. First, navigate to the Desktop directory and then follow the command below.
 
 ``` bash
@@ -112,7 +115,9 @@ git commit -m "First version of Hugo personal website"
 git push origin master
 ```
 
-## Custom domain using Namecheap
+## Custom domain using Namecheap 
+
+This is an *optional step*.
 
 To set up a custom domain for your Github page you first need a custom domain! My tool of choice is Namecheap as they offer free domains to people with edu email addresses. So navigate to the <a href="https://www.namecheap.com/" target="_blank">Namecheap main page</a>, create an account, and buy a domain. 
 
