@@ -1,117 +1,82 @@
-baseurl = "https://zhenghaozhu.me/"
-languageCode = "en"
-DefaultContentLanguage = "en"
+baseURL = "https://zhenghaozhu.github.io"
+publishDir = "zhenghaozhu.github.io/"
+languageCode = "en-us"
+title = "Zhenghao (Kevin) Zhu"
 theme = "hello-friend-ng"
-publishDir = "zhenghaozhu.github.io"
+copyright = "Zhenghao (Kevin) Zhu" # cactus will use title if copyright is not set
+disqusShortname = "example" # Used when comments is enabled. Cactus will use site title if not set
+# googleAnalytics = "UA-1234-5"
 
-rssLimit  = 10  # Maximum number of items in the RSS feed.
-copyright = "This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License." # This message is only used by the RSS template.
 
-enableRobotsTXT = true
-enableGitInfo   = false
-enableEmoji     = true
+# summaryLength = 2
 
-[permalinks]
-  posts = "/posts/:year/:month/:title/"
+# Main menu which appears below site header.
+[[menu.main]]
+name = "About"
+url = "/about"
+weight = 1
+
+[[menu.main]]
+name = "Projects"
+url = "/projects"
+weight = 2
+
+[[menu.main]]
+name = "Posts"
+url = "/posts"
+weight = 3
+
+[[menu.main]]
+name = "Book List"
+url = "/book-list"
+weight = 4
+
+[markup]
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = false
+    startLevel = 2
 
 [params]
-  dateform        = "Jan 2, 2006"
-  dateformShort   = "Jan 2"
-  dateformNum     = "2006-01-02"
-  dateformNumTime = "2006-01-02 15:04 -0700"
 
-  # Metadata mostly used in document's head
-  description = "Zhenghao (Kevin) Zhu's Personal Website"
-  keywords = "personal website, homepage, blog, science, informatics, development, programming, Stony Brook University, Zhenghao Zhu, Zhenghao (Kevin) Zhu, Kevin Zhu"
-  images = [""]
+  colortheme = "dark" # dark, light, white, or classic
+  rss = false # generate rss feed. default value is false
+  googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
 
-  # Directory name of your blog content (default is `content/posts`)
-  contentTypeName = "posts"
-  # Default theme "light" or "dark"
-  defaultTheme = "dark"
+  # Home page settings
+  description = "Hi! My name is Zhenghao (Kevin) Zhu."
+  # mainSection = "posts" # your main section
+  showAllPostsOnHomePage = false # default
+  postsOnHomePage = 5 # this option will be ignored if showAllPostsOnHomePage is set to true
+  tagsOverview = true # show tags overview by default.
+  showProjectsList = true # show projects list by default (if projects data file exists).
+  projectsUrl = "https://github.com/gohugoio" # title link for projects list
 
+  # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
+  dateFormat = "2006-01-02" # default
 
-[languages]
-  [languages.en]
-    title = "Zhenghao (Kevin) Zhu"
-    keywords = "personal website, homepage, blog, science, informatics, development, programming, Stony Brook University, Zhenghao Zhu, Zhenghao (Kevin) Zhu, Kevin Zhu"
-    copyright = ""  
-    readOtherPosts = "Read other posts"
+  # Post page settings
+  show_updated = false # default
 
-    [languages.en.params.logo]
-      logoText = "$ cd /kevin/Home"
-      logoHomeLink = "/"
-    # or
-    #
-    # path = "/img/your-example-logo.svg"
-    # alt = "Your example logo alt text"
+  [params.comments]
+    enabled = true # default
+    engine = "disqus" # more supported engines will be added.
 
-	# You can create a language based menu
-    [languages.en.menu]
-      [[languages.en.menu.main]]
-        identifier = "about me"
-        name = "About Me"
-        weight = 1
-        url  = "/about-me"
-      [[languages.en.menu.main]]
-        identifier = "Projects"
-        name = "Projects"
-        weight = 2
-        url = "/projects"
-      [[languages.en.menu.main]]
-        identifier = "Posts"
-        name = "Posts"
-        weight = 3
-        url = "/posts"
-      [[languages.en.menu.main]]
-        identifier = "Contact"
-        name = "Contact"
-        weight = 4
-        url = "/contact"
-    [languages.es.menu]
-      [[languages.es.menu.main]]
-        identifier = "sobre mi"
-        name = "Sobre Mi"
-        url  = "/sobre-mi"
-      [[languages.es.menu.main]]
-        identifier = "proyectos"
-        name = "Proyectos"
-        url = "/proyectos"
-      [[languages.es.menu.main]]
-        identifier = "publicaciones"
-        name = "Publicaciones"
-        url = "/publicaciones"
-      [[languages.es.menu.main]]
-        identifier = "Contacto"
-        name = "Contacto"
-        url = "/contacto"
-  # Social icons
+  # the value of name should be an valid font awesome icon name (brands type)
+  # https://fontawesome.com/icons?d=gallery&s=brands
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/ZhenghaoZhu"
+  [[params.social]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/zhuzhenghao/"
+  [[params.social]]
+    name = "email"
+    url = "kevinzhuzhenghao@gmail.com"  # no need for "mailto:" in the head
   [[params.social]]
     name = "resume"
     url = "https://drive.google.com/file/d/1B-zOl7RWpCB4oYNKd2pKki-f1M3XrNjl/view?usp=sharing"
 
-  [[params.social]]
-    name = "email"
-    url  = "mailto:kevinzhuzhenghao@gmail.com"
-
-  [[params.social]]
-    name = "github"
-    url  = "https://github.com/ZhenghaoZhu"
-
-  [[params.social]]
-    name = "linkedin"
-    url  = "https://www.linkedin.com/in/zhuzhenghao/"
-# And you can even create generic menu
-[menu]
-  [[menu.main]]
-    identifier = "about me"
-    name       = "About Me"
-    url        = "/about-me"
-  [[menu.main]]
-    identifier = "projects"
-    name       = "Projects"
-    url        = "/projects"
-  [[menu.main]]
-    identifier = "blog"
-    name       = "Blog"
-    url        = "/blog"
+[params.logo]
+    logoText     = "$ cd /home/kevin"
+    logoHomeLink = "/"

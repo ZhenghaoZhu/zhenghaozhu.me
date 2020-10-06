@@ -16,7 +16,7 @@ The website you are looking at right now was created for the purpose of showing 
 
 **Code:** https://github.com/ZhenghaoZhu/zhenghaozhu.me
 
-**Demo:** [You are looking at it!](https://zhenghaozhu.me/)
+**Demo:** [You are looking at it!](http://zhenghaozhu.github.io/)
 
 
 
