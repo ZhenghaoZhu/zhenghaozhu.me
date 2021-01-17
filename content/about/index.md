@@ -4,7 +4,7 @@ date: "2019-11-01"
 author: Zhenghao Zhu
 draft: false
 toc: false
-cover: 
+cover:
 tags:
   - hugo
   - github
@@ -13,11 +13,13 @@ tags:
   - namecheap
 ---
 
-> A personal website to showcase personal projects is one of the most important things a computer science student should have when they are searching for a job. This 
-> tutorial will serve all those students that are not well-versed in web development and want an easy way to set up their website in a fast manner. 
+### Education
 
-## Before Starting 
+- Undergraduate student @ Stony Brook University studying Computer Science and Applied Mathematics **(Expected Graduation: May 2021)**
 
-<img src = "Microsoft_Logo.png">
----
+### Work Experience
 
+- Incoming Software Engineer @ Microsoft **(Summer 2021)**
+- Software Engineer Intern @ Microsoft **(Summer 2020)**
+- Undergraduate Research Assistant @ The Moffitt Group in Stony Brook University Bioinformatics Department **(Fall 2019 - Present)**
+- Undergraduate Research Assistant @ The Eisele Group in The City College of New York **(Summer 2017 - Winter 2018)**
